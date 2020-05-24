@@ -68,9 +68,22 @@
   <h2>Заинтересовались?</h2>
     <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
   </section>
+  <fieldset>
+  <legend> Поиск гостиницы в Седоне</legend><br>
+  <label for="datein"> Дата заезда:</label>
+  <input type="date" name="datein"><br>
+  <br>
+  <label for="dateout">Дата выезда:</label>
+  <input type="date" name="dateout"><br>
+  <br>
+  <label for="grownups">Взрослые:</label>
+    <input type="number" name="grownups" min="0" max="40">
+  <label for="children">Дети:</children>
+    <input type="number" name="children" min="0"max="50">
+  <button type="button">Найти</button>
+  </fieldset>
 <img src="map.png" width="1199" height="594" alt="Карта">
 </main>
-
   <footer>
     <div>
       <h2>Контакты</h2> <!--Логический заголовок,в макете такого слова нет-->
@@ -101,11 +114,5 @@
         <img src="logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy">
       </a>
       </footer>
-
-<section>
-<h3> Поиск гостиницы в Седоне</h3>
-<!--Тут будет форма поиска -->
-<button type="button">Найти</button>
-</section>
   </body>
 </html>
