@@ -68,20 +68,22 @@
   <h2>Заинтересовались?</h2>
     <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
   </section>
+  <form action="https://visitsedona.ru/hotels" method="get">
   <fieldset>
   <legend> Поиск гостиницы в Седоне</legend><br>
   <label for="datein"> Дата заезда:</label>
-  <input type="date" name="datein"><br>
+  <input type="date" id="datein"><br>
   <br>
   <label for="dateout">Дата выезда:</label>
-  <input type="date" name="dateout"><br>
+  <input type="date" id="dateout"><br>
   <br>
   <label for="grownups">Взрослые:</label>
-    <input type="number" name="grownups" min="0" max="40">
+    <input type="number" id="grownups" min="0" max="40">
   <label for="children">Дети:</children>
-    <input type="number" name="children" min="0"max="50">
+    <input type="number" id="children" min="0"max="50">
   <button type="button">Найти</button>
   </fieldset>
+</form>
 <img src="map.png" width="1199" height="594" alt="Карта">
 </main>
   <footer>
