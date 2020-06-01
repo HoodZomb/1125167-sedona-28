@@ -1,0 +1,151 @@
+/*Переменные*/
+
+:root {
+  --basic-white: #ffffff;
+  --basic-black: #000000;
+  --light-black: #333333;
+  --basic-cyan: #81b3d2;
+  --brown: #766357;
+  --gray: #eeeeee
+
+}
+
+body {
+  font-family: "PT Sans",sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  background-color: var(--basic-white);
+  background-image: url("img/background-photo.jpg");
+  background-position: top center;
+  background-repeat: no-repeat
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height:auto
+}
+
+h2 {
+  font-size: 21px;
+  text-align:center;
+}
+
+
+.site-navigation a{
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--basic-black);
+  background-color: transparent
+}
+.site-navigation {
+  list-style: none
+}
+
+.site-navigation a:hover {
+color: var(--basic-cyan)
+}
+
+.reasons-list {
+  list-style:none;
+  text-align: center
+}
+
+.reasons, .map {
+background-color: var(--gray)
+}
+
+.reason-item1 h2, .reason-item1 p {
+  color: var(--basic-white);
+  background-color: var(--basic-cyan)
+}
+
+.reason-item2 h2, .reason-item2 p{
+    color: var(--basic-white);
+    background-color: var(--basic-cyan)
+}
+
+.features-list {
+  list-style: none;
+  text-align: center
+}
+
+.feature-item h3 {
+  font-size: 21px;
+  text-align: center
+}
+.popup {
+  display:none
+}
+
+p {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--light-black)
+}
+
+.intro {
+  font-size: 14px;
+  text-align: center;
+  color: var(--light-black)
+}
+
+.inner {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--basic-black);
+  list-style: none
+}
+
+.limit {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--basic-black)
+}
+
+.found {
+  list-style: none
+}
+
+/* Button*/
+.detail {
+  font: inherit;
+  text-align: center;
+  color: var(--basic-white);
+  text-transform: uppercase;
+  background-color: var(--basic-cyan);
+  border: none
+}
+
+.book {
+  font: inherit;
+  text-align: center;
+  color: var(--basic-white);
+  text-transform: uppercase;
+  background-color: var(--brown);
+  border: none
+}
+
+.detail:hover,.detail:active,.book:hover,.book:active {
+  background-color: var(--light-black)
+}
+
+.show {
+  font: inherit;
+  text-align: center;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  background-color: transparent;
+}
+/* Footer*/
+.social-media {
+  list-style:none
+}
+
+.icon {
+  background-color: var(--basic-cyan)
+}

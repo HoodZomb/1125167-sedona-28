@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 <header>
@@ -10,7 +12,7 @@
   <a>
     <img src="img/logo.svg" width="138" height="70" alt = "Седона логотип">
   </a>
-  <ul>
+  <ul class="site-navigation">
   <li><a href="blank.html">Информация</a></li>
   <li><a href="blank.html">Фото и видео</a></li>
   <li><a href="index.html">Карта штата</a></li>
@@ -21,12 +23,12 @@
 
 <main>
   <section>
-<h2> Поиск гостиниц</h2> <!--Логический заголовок-->
+<h2 class="visually-hidden"> Поиск гостиниц</h2> <!--Логический заголовок-->
 <img src="img/backgroundblur.jpg" width="1200" height="217" alt="Фон">
 
 <form action="https://visitsedona.ru/booking" method="get">
 <h3>Инфраструктура:</h3>
-<ul>
+<ul class="inner">
   <li><input type="checkbox" id="pool" name="pool">
     <label for="pool">Бассейн</label></li>
   <li><input type="checkbox" id="parking" name="parking">
@@ -36,7 +38,7 @@
 </ul>
 
 <h3>Тип жилья:</h3>
-<ul>
+<ul class="inner">
   <li><input type="checkbox" id="hotel" name="hotel">
     <label for="hotel">Гостиница</label></li>
   <li><input type="checkbox" id="motel" name="motel">
@@ -48,26 +50,26 @@
 <h3>Стоимость в сутки(Р):</h3>
 от 0 <input type="range" step="100" min="0" max="3000"> до 3000<br>
 <br>
-<button type="button">Показать</button>
+<button class="show" type="button">Показать</button>
 </form>
 
 <h2>Найдено:</h2>
 <h4>Сортировка:</h4>
-<ul>
+<ul class="inner">
   <li>По цене:</li>
   <li>По типу:</li>
   <li>По рейтингу:</li>
 </ul>
   <!--Результаты поиска-->
-<ul>
+<ul class="found">
   <li>
     <h3>Amara resort & spa</h3>
     <p>Гостиница от 4000 р.</p>
     <figure>
         <img src="img/amara.jpg" width="135" height="90" alt="Амара">
       </figure>
-      <button type="button">Подробнее</button>
-      <button type="button">Забронировать</button>
+      <button class="detail" type="button">Подробнее</button>
+      <button class="book" type="button">Забронировать</button>
       <p>Рейтинг:8,5</p>
       <!--Обозначение количества звезд-->
     </li>
@@ -77,8 +79,8 @@
       <figure>
           <img src="img/moteldesert.jpg" width="135" height="90" alt="Дезерт">
         </figure>
-        <button type="button">Подробнее</button>
-        <button type="button">Забронировать</button>
+        <button class="detail" type="button">Подробнее</button>
+        <button class="book" type="button">Забронировать</button>
         <p>Рейтинг:8,9</p>
         <!--Обозначение количества звезд-->
       </li>
@@ -88,8 +90,8 @@
         <figure>
             <img src="img/diablo.jpg" width="135" height="90" alt="Апартаменты">
           </figure>
-          <button type="button">Подробнее</button>
-          <button type="button">Забронировать</button>
+          <button class="detail" type="button">Подробнее</button>
+          <button class="book" type="button">Забронировать</button>
           <p>Рейтинг:9,2</p>
           <!--Обозначение количества звезд-->
           </li>
@@ -105,19 +107,19 @@
         ТЕЛ:+7(495)666-01-66</p>
       </div>
 
-      <div>
-        <h2>Адреса в соцсетях</h2> <!--Логический заголовок,в макете такого словосочетания нет-->
-      <ul>
-        <li><a href="#">Твиттер
-        <img src="img/rectangle.svg" width="46" height="48" alt="Твиттер">
+      <div class="contacts">
+        <h2 class="visually-hidden">Адреса в соцсетях</h2> <!--Логический заголовок,в макете такого словосочетания нет-->
+      <ul class="social-media">
+        <li class="icon"><a href="#">Твиттер
+        <img src="img/twitter.svg" width="17" height="17" alt="Твиттер">
         </a>
         </li>
-        <li><a href="#">Фейсбук
-        <img src="img/rectangle.svg" width="46" height="48" alt="Фейсбук">
+        <li class="icon"><a href="#">Фейсбук
+        <img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук">
         </a>
         </li>
-        <li><a href="#">Ютуб
-        <img src="img/rectangle.svg" width="46" height="48" alt="Ютуб">
+        <li class="icon"><a href="#">Ютуб
+        <img src="img/youtube.svg" width="20" height="16" alt="Ютуб">
       </a>
       </li>
       </ul>
