@@ -59,12 +59,12 @@ color: var(--basic-cyan)
 background-color: var(--gray)
 }
 
-.reason-item1 h2, .reason-item1 p {
+.reason-item1  {
   color: var(--basic-white);
   background-color: var(--basic-cyan)
 }
 
-.reason-item2 h2, .reason-item2 p{
+.reason-item2 {
     color: var(--basic-white);
     background-color: var(--basic-cyan)
 }
@@ -144,6 +144,13 @@ p {
 /* Footer*/
 .social-media {
   list-style:none
+}
+
+.outro {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 180%;
+  color: var(--basic-black)
 }
 
 .icon {
