@@ -132,7 +132,14 @@ color: var(--basic-cyan)
   padding:0;
 }
 /*Main*/
-
+.intro-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height:215px;
+}
 .reasons {
   width:100%;
 }
@@ -175,6 +182,10 @@ color: var(--basic-cyan)
   flex-direction:row;
   justify-content: space-around;
 }
+
+.feature-item {
+  margin:60px 0
+}
 .reasons-list {
   list-style:none;
   text-align: center
@@ -213,12 +224,11 @@ color: var(--basic-cyan)
 
 .reasons-poor {
   display:flex;
-  justify-content:space-around
+  justify-content:space-around;
+  align-items: center;
+  height: 250px
 }
 
-.reasons, .map {
-background-color: var(--gray)
-}
 
 .features-list {
   list-style: none;
@@ -252,7 +262,9 @@ background-color: var(--gray)
   color: var(--basic-black)
 }
 
-
+.reasons, .map {
+background-color: var(--gray)
+}
 
 /*Hotel pick menu*/
 .pick {
