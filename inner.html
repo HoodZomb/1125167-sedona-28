@@ -7,20 +7,20 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/normalize.css" rel ="stylesheet">
   </head>
-  <body class="page-body-inner">
-<header class="main-header">
-<nav class="main-navigation">
-  <div class="main-navigation-wrapper">
-    <div class="container">
+<body class="page-body-inner">
+ <header class="main-header">
+  <nav class="main-navigation">
+   <div class="container">
+      <a class="to-main-page" href="index.html">
+      <img src="img/logo.svg" width="138" height="70" alt = "Седона логотип">
+    </a>
   <ul class="site-navigation">
   <li><a href="blank.html">Информация</a></li>
   <li><a href="blank.html">Фото и видео</a></li>
-  <li class="header-logo"><img src="img/logo.svg" width="138" height="70" alt = "Седона логотип"></li>
   <li><a href="index.html">Карта штата</a></li>
   <li><a href="inner.html">Гостиницы</a></li>
-</ul>
-</div>
-</nav>
+  </ul>
+  </nav>
 </header>
 
 <main class="container">
@@ -29,9 +29,8 @@
 
 <form action="https://visitsedona.ru/booking" method="get">
   <div class="search-parameters">
-  <div class="infrasctructure">
-<h3>Инфраструктура:</h3>
-<ul class="inner">
+<ul class="inner-infrastructure">
+  <li><h3>Инфраструктура:</h3></li>
   <li><input type="checkbox" id="pool" name="pool">
     <label for="pool">Бассейн</label></li>
   <li><input type="checkbox" id="parking" name="parking">
@@ -39,11 +38,10 @@
   <li><input type="checkbox" id="wifi" name="wifi">
     <label for="wifi">Wi-Fi</label></li>
 </ul>
-</div>
 
-<div class="hotel-type">
-<h3>Тип жилья:</h3>
-<ul class="inner">
+
+<ul class="inner-hotel-type">
+  <li><h3>Тип жилья:</h3></li>
   <li><input type="checkbox" id="hotel" name="hotel">
     <label for="hotel">Гостиница</label></li>
   <li><input type="checkbox" id="motel" name="motel">
@@ -51,12 +49,12 @@
   <li><input type="checkbox" id="appartament" name="appartament">
     <label for="appartament">Апартаменты</label></li>
 </ul>
-</div>
 
 
 <div class="cost-per-day">
-<h3>Стоимость в сутки(Р):</h3>
-от 0 <input type="range" step="100" min="0" max="3000"> до 3000<br>
+<h3>Стоимость в сутки (Р):</h3>
+<span>от 0                                  до 3000</span>
+<input type="range" step="100" min="0" max="3000">
 <br>
 <button class="show" type="button">Показать</button>
 </div>
@@ -67,50 +65,76 @@
 <section class="sort">
 <h2>Найдено:</h2>
 <h4>Сортировка:</h4>
-<ul class="inner">
+<ul class="sort-inner">
   <li>По цене:</li>
   <li>По типу:</li>
   <li>По рейтингу:</li>
+  <figure class="sort-triangles">
+  <img src="img/triangle-up.svg" width="11" height="10" alt = "От большего к меньшему">
+  <img src="img/triangle-down.svg" width="11" height="10" alt = "От меньшего к большему">
+</figure>
 </ul>
+
 </section>
   <!--Результаты поиска-->
 <ul class="found">
-  <li class="amara">
-    <figure>
+  <li class="found-item">
         <img src="img/amara.jpg" width="135" height="73.94" alt="Амара">
-      </figure>
       <div class="text">
     <h3>Amara resort & spa</h3>
     <p>Гостиница от 4000 р.</p>
+    <div class="buttons">
       <button class="detail" type="button">Подробнее</button>
       <button class="book" type="button">Забронировать</button>
-      <p>Рейтинг:8,5</p>
+    </div>
+    </div>
+      <div class="path">
+        <ul class="stars">
+          <li aria-label="star"></li>
+          <li aria-label="star"></li>
+          <li aria-label="star"></li>
+          <li aria-label="star"></li>
+        </ul>
+      <p class="rating">Рейтинг: 8,5</p>
     </div>
       <!--Обозначение количества звезд-->
     </li>
-    <li class="desert">
-      <figure>
+    <li class="found-item">
           <img src="img/moteldesert.jpg" width="135" height="73.94" alt="Дезерт">
-        </figure>
         <div class="text">
       <h3>Desert quail inn</h3>
       <p>мотель от 3000 р.</p>
+      <div class="buttons">
         <button class="detail" type="button">Подробнее</button>
         <button class="book" type="button">Забронировать</button>
-        <p>Рейтинг:8,9</p>
+      </div>
+    </div>
+        <div class="path">
+          <ul class="stars">
+            <li aria-label="star"></li>
+            <li aria-label="star"></li>
+            <li aria-label="star"></li>
+          </ul>
+        <p class="rating">Рейтинг: 8,9</p>
       </div>
         <!--Обозначение количества звезд-->
       </li>
-      <li class="diablo">
-        <figure>
+      <li class="found-item">
             <img src="img/diablo.jpg" width="135" height="73.94" alt="Апартаменты">
-          </figure>
           <div class="text">
         <h3>Villas at poco diablo</h3>
         <p>апартаменты от 2000 р.</p>
+        <div class="buttons">
           <button class="detail" type="button">Подробнее</button>
           <button class="book" type="button">Забронировать</button>
-          <p>Рейтинг:9,2</p>
+        </div>
+        </div>
+          <div class="path">
+            <ul class="stars">
+              <li aria-label="star"></li>
+              <li aria-label="star"></li>
+            </ul>
+          <p class="rating">Рейтинг: 9,2</p>
         </div>
           <!--Обозначение количества звезд-->
           </li>
