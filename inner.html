@@ -52,10 +52,20 @@
 
 
 <div class="cost-per-day">
-<h3>Стоимость в сутки (Р):</h3>
-<span class="range">от 0                                  до 3000</span>
-<input type="range" step="100" min="0" max="3000">
-<br>
+<form action="https://visitsedona.ru/booking" method="get"></form>
+<fieldset class="filter-item">
+<legend> Стоимость в сутки (Р):</legend>
+<span class="range">              от 0                    |                   до 3000          </span>
+<div class="range-filter">
+  <div class="range-controls">
+  <div class="scale">
+  <div class="bar"></div>
+  </div>
+  <div class="toggle toggle-min"></div>
+  <div class="toggle toggle-max"></div>
+  </div>
+</div>
+</fieldset>
 <button class="show" type="button">Показать</button>
 </div>
 </div>
@@ -70,8 +80,12 @@
   <li>По типу:</li>
   <li>По рейтингу:</li>
   <figure class="sort-triangles">
-  <img src="img/triangle-up.svg" width="11" height="10" alt = "От большего к меньшему">
-  <img src="img/triangle-down.svg" width="11" height="10" alt = "От меньшего к большему">
+    <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA"/>
+    </svg>
+    <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M5.5 10L0 0H11" fill="#CACACA"/>
+    </svg>
 </figure>
 </ul>
 
@@ -79,6 +93,7 @@
   <!--Результаты поиска-->
 <ul class="found">
   <li class="found-item">
+    <div class="line"></div>
         <img src="img/amara.jpg" width="135" height="73.94" alt="Амара">
       <div class="text">
     <h3>Amara resort & spa</h3>
@@ -100,6 +115,7 @@
       <!--Обозначение количества звезд-->
     </li>
     <li class="found-item">
+      <div class="line"></div>
           <img src="img/moteldesert.jpg" width="135" height="73.94" alt="Дезерт">
         <div class="text">
       <h3>Desert quail inn</h3>
@@ -120,6 +136,7 @@
         <!--Обозначение количества звезд-->
       </li>
       <li class="found-item">
+        <div class="line"></div>
             <img src="img/diablo.jpg" width="135" height="73.94" alt="Апартаменты">
           <div class="text">
         <h3>Villas at poco diablo</h3>
