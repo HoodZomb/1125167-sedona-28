@@ -26,7 +26,7 @@
   font-weight: 700;
   color: var(--basic-black);
   text-transform: uppercase;
-  background-color: var(--basic-white);
+  background-color: var(--gray-light);
 }
 
 .page-body-inner {
@@ -79,8 +79,11 @@ p {
 /*Site Navigation*/
 .main-navigation {
   display:flex;
-  margin:0;
-  justify-content:center
+  width:1200px;
+  margin-left:auto;
+  margin-right:auto;
+  justify-content:center;
+  background-color: var(--basic-white)
 }
 .container {
   margin:0
@@ -199,7 +202,7 @@ opacity:30%
   background-color: var(--basic-cyan)
 }
 
-.reason-info1{
+.reason-info1 {
   display:flex;
   width:400px;
   height:256px;
@@ -250,7 +253,6 @@ opacity:30%
   flex-wrap:wrap;
   justify-content:center;
   align-self:center
-
 }
 
 .reason-info2 p {
@@ -258,7 +260,6 @@ opacity:30%
   font-weight: 400;
   color: var(--basic-white)
 }
-
 
 .reasons-poor {
   display:flex;
@@ -290,29 +291,27 @@ opacity:30%
   border: none
 }
 
-
 .hidden-form-button .popup {
   display:none;
-    z-index:2
 }
 
 .hidden-form-button:hover .popup {
   position:absolute;
-  display: flex;
+  display: flex ;
   height:395px;
   width:568px;
   justify-content:center;
   padding:50px 0;
   flex-wrap:wrap;
   background-color: var(--basic-white);
-  z-index:2
 }
 
 .popup .search-item  {
   display:flex;
-  flex-wrap:wrap;
   font: inherit;
-  outline: 5px solid #ff0000
+  outline: 5px solid #ff0000;
+  margin-top: 0;
+  margin-left:10px
 }
 
 .date-decoration  {
@@ -327,21 +326,19 @@ opacity:30%
 
 
  .date-decoration input {
+   display:flex;
    font:inherit;
    background-color: var(--gray-light);
    border:1px solid var(--gray-light);
    width:320px
 }
 
+
 .search-item:nth-child(3) input,
 .search-item:nth-child(4) input {
   width: 114px
 }
 
-.search-item {
-  margin-top: 0;
-  margin-left:10px
-}
 
 .search-item input:hover {
   background-color:var(--gray-dark)
@@ -383,12 +380,11 @@ fill:var(--basic-black)
 }
 
 .search-form {
-  display:flex;
   flex-direction:column;
   width:568px;
   margin-left:auto;
   margin-right:auto;
-  z-index:2
+
 }
 
 .search{
@@ -436,8 +432,9 @@ background-color: var(--gray)
 
 .map {
   height:594px;
+  background-position: 0px 200px;
   background-image: url("../img/map.png");
-  z-index:1
+  z-index:1;
 }
 
 /*Hotel pick menu*/
@@ -466,8 +463,6 @@ background-color: var(--gray)
   display:flex;
   flex-direction:column;
   margin:0;
-  padding-left:0px;
-  margin-left:70px;
   justify-content:space-around;
   padding-bottom:20px;
   list-style:none;
@@ -836,6 +831,8 @@ text-align:right
   margin-left:auto;
   margin-right:auto;
   justify-content: space-around;
+  background-color:rgba(255, 255, 255, 0.3);
+  z-index:2
 }
 
 .visually-hidden:not(:focus):not(:active) {
