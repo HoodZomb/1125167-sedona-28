@@ -15,10 +15,10 @@
       <img src="img/logo.svg" width="138" height="70" alt = "Седона логотип">
     </a>
   <ul class="site-navigation">
-  <li><a href="index.html">Информация</a></li>
+  <li><a class="info-page" href="index.html">Информация</a></li>
   <li><a href="blank.html">Фото и видео</a></li>
   <li><a href="blank.html">Карта штата</a></li>
-  <li><a href="inner.html">Гостиницы</a></li>
+  <li><a class="hotels active" href="inner.html">Гостиницы</a></li>
   </ul>
   </nav>
 </header>
@@ -31,11 +31,11 @@
   <div class="search-parameters">
 <ul class="inner-infrastructure">
   <li><h3>Инфраструктура:</h3></li>
-  <li class="filter-option"><input class="visually-hidden filter-input-checkbox" type="checkbox" id="pool" name="pool">
+  <li class="filter-option"><input class="visually-hidden filter-input-checkbox" type="checkbox" id="pool" name="pool" disabled>
     <label for="pool">Бассейн</label></li>
-  <li class="filter-option"><input class="visually-hidden filter-input-checkbox" type="checkbox" id="parking" name="parking">
+  <li class="filter-option"><input class="visually-hidden filter-input-checkbox" type="checkbox"  id="parking" name="parking" disabled>
     <label for="parking">Парковка</label></li>
-  <li class="filter-option"><input class="visually-hidden filter-input-checkbox" type="checkbox" id="wifi" name="wifi">
+  <li class="filter-option"><input class="visually-hidden filter-input-checkbox" type="checkbox" id="wifi" name="wifi" disabled>
     <label for="wifi">Wi-Fi</label></li>
 </ul>
 
@@ -44,7 +44,7 @@
   <li><h3>Тип жилья:</h3></li>
   <li class="filter-option"><input class="visually-hidden filter-input-checkbox" type="checkbox" id="hotel" name="hotel">
     <label for="hotel">Гостиница</label></li>
-  <li class="filter-option"><input class="visually-hidden filter-input-checkbox" type="checkbox" id="motel" name="motel">
+  <li class="filter-option"><input class="visually-hidden filter-input-checkbox" type="checkbox" id="motel" name="motel" checked>
     <label for="motel">Мотель</label></li>
   <li class="filter-option"><input class="visually-hidden filter-input-checkbox" type="checkbox" id="appartament" name="appartament">
     <label for="appartament">Апартаменты</label></li>
@@ -55,7 +55,21 @@
 <form action="https://visitsedona.ru/booking" method="get"></form>
 <fieldset class="filter-item">
 <legend> Стоимость в сутки (Р):</legend>
-<span class="range">              от 0                    |                   до 3000          </span>
+<div class="range">
+  <div class="range-lim">
+  <label for="min">ОТ</label>
+  <input type="text" id="min" name="min" value="0">
+</div>
+<figure class="stick">
+  <svg width="2" height="22" viewBox="0 0 2 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="2" height="22" fill="white"/>
+  </svg>
+</figure>
+  <div class="range-lim">
+  <label for="max">ДО</label>
+  <input type="text" id="max" name="max" value="3000">
+</div>
+</div>
 <div class="range-filter">
   <div class="range-controls">
   <div class="scale">
@@ -73,9 +87,9 @@
 </section>
 
 <section class="sort">
-<h2>Найдено:</h2>
-<h4>Сортировка:</h4>
+<h2>Найдено: 3</h2>
 <ul class="sort-inner">
+  <li>Сортировка:</li>
   <li>По цене:</li>
   <li>По типу:</li>
   <li>По рейтингу:</li>
@@ -156,6 +170,7 @@
           <!--Обозначение количества звезд-->
           </li>
       </ul>
+      <div class="footer-up"></div>
 
 </main>
 
