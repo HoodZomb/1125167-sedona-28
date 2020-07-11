@@ -297,7 +297,7 @@ opacity:30%
   color: var(--basic-white)
 }
 
-.reasons-poor {
+ .reasons-poor {
   display:flex;
   justify-content:space-around;
   align-items: center;
@@ -575,6 +575,8 @@ background-color: var(--gray)
 }
 
 .inner-infrastructure h3 {
+  font-size:16px;
+  line-height:21px;
   margin-bottom:0
 }
 
@@ -667,22 +669,23 @@ background-color: var(--gray)
 /* Filter toggle*/
 
 .filter-item {
-  margin-top: 0px;
+  margin-top: -5px;
   padding: 0;
   border: none;
 }
 
 .range-filter {
+  margin-top:-5px;
   width: 316px;
 
 }
 
 .filter-item legend {
-  margin:0;
+margin:0;
 font-size: 16px;
 line-height:21px;
 font-weight:700px;
-margin-bottom: 20px;
+margin-bottom: 15px;
 }
 
 .range-controls {
@@ -752,6 +755,7 @@ position:relative;
   font-weight:400;
   line-height:21px;
   padding: 7px 0;
+  margin-top:-5px;
   border: 3px solid white;
   border-radius:2px;
 }
@@ -785,9 +789,14 @@ position:relative;
 
 
 .show {
+  display:flex;
   width:136px;
   height:36px;
-  align-self:center;
+  justify-content:center;
+  align-items:center;
+  margin-top:32px;
+  margin-left:auto;
+  margin-right:auto
 }
 
 .show:hover {
@@ -853,7 +862,7 @@ position:relative;
   margin-right: 40px;
 }
 
-.sort-inner li:not(:first-child):hover {
+.sort-inner li:not(:first-child):not(:last-child):hover {
   color:var(--basic-cyan);
   line-height:18px;
   font-size: 12px;
@@ -880,10 +889,12 @@ position:relative;
   margin-right: 40px;
 }
 
-.sort-triangles {
+.sort-inner li:last-child {
   margin-left:auto;
   margin-right:60px;
-  margin-top:0
+  margin-top:-10px;
+  padding-top:0;
+  text-decoration:none
 }
 
 .sort-triangles svg {
