@@ -325,7 +325,8 @@ opacity:30%
   color: var(--basic-white);
   text-transform: uppercase;
   background-color: var(--brown);
-  border: none
+  border: none;
+  z-index:2;
 }
 
 .hidden-form-button .popup {
@@ -473,20 +474,30 @@ vertical-align: middle;
   background-color: var(--brown-extra-dark);
 }
 
-.search-form p {
+.space-before-search {
+  width:1200px;
+  height:290px;
+  margin-top:-25px;
+  background-color:var(--basic-white);
+  z-index:1
+}
+.space-before-search p {
   text-align:center;
   margin-bottom:50px
 }
 
-.search-form h2 {
-  font-size:30px
+.space-before-search h2 {
+  font-size:30px;
+  padding-top:50px;
 }
 
 .search-form {
   flex-direction:column;
   width:568px;
+  margin-top:-86px;
   margin-left:auto;
   margin-right:auto;
+
 }
 
 
