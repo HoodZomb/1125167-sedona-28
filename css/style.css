@@ -301,7 +301,8 @@ opacity:30%
   display:flex;
   justify-content:space-around;
   align-items: center;
-  height: 250px
+  height: 250px;
+  list-style: none;
 }
 
 
