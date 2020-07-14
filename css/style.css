@@ -208,7 +208,7 @@ opacity:30%
   margin:0 0;
   margin-bottom:-1px;
   padding:0;
-  background-image: url("../img/decor.svg");
+  background-image:  url("../img/decor.svg");
   background-position: bottom;
   background-repeat:no-repeat;
 
@@ -488,7 +488,7 @@ opacity:30%
 .date-decoration  svg{
   display:flex;
   align-self: center;
-  margin-right:5px
+  margin-right:5px;
 }
 
 .form-group {
@@ -497,11 +497,22 @@ opacity:30%
   justify-content: space-between;
 }
 
-.quantity-form {
+.form-group .search-item:first-child .quantity-form {
   display:flex;
   width:114px;
-  height:38px
+  height:38px;
+  margin-right:5px;
+  padding:0
 }
+
+.form-group .search-item:last-child .quantity-form {
+  display:flex;
+  width:114px;
+  height:38px;
+  margin-right:3px;
+  padding:0
+}
+
 /*
 .form-group div:first-child label {
   margin-right:100px;
@@ -516,7 +527,9 @@ vertical-align: middle;
 }
 
 .quantity-form input {
+  font:inherit;
   width:64px;
+  text-align:center;
   background-color: var(--gray-light);
   border:1px solid var(--gray-light);
 
@@ -534,6 +547,10 @@ vertical-align: middle;
   fill:var(--basic-black)
 }
 
+.button-plus svg:active path {
+  fill:var(--basic-cyan)
+}
+
 .button-minus {
   display:flex;
   padding:0;
@@ -546,13 +563,20 @@ vertical-align: middle;
   fill:var(--basic-black)
 }
 
+.button-minus svg:active rect {
+  fill:var(--basic-cyan)
+}
+
 .search-item input:hover {
-  background-color:var(--gray-dark)
+  background-color:var(--gray-dark);
+  border:1px solid var(--gray-dark)
 }
 
 
-.search-item input:focus {
-  background-color: transparent
+.search-item input:focus   {
+  background-color: var(--basic-white);
+  border:1px solid var(--gray-light);
+
 }
 
 .date-decoration svg:hover path {
